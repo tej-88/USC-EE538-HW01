@@ -46,3 +46,11 @@ TEST(FindMedian, EvenNumSameInput) {
   float expected = 5;
   EXPECT_EQ(expected, actual);
 }
+
+TEST(FindMedian, OddNumSameInput) {
+  CPPLib s;
+  std::vector<int> input = {5, 5, 5, 5, 5};
+  float actual = s.FindMedian(input);
+  float expected = 5;
+  EXPECT_EQ(expected, actual);
+}
