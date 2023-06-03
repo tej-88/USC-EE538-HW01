@@ -14,9 +14,9 @@ class CPPLib {
 
   // NOTE: write your own function declaration q2 here
   float FindMedian(const std::vector<int> &input);
-  
+
   // Print your self-introduction
-  std::string PrintIntro();
+  std::string PrintIntro(const std::string &first, const std::string &last, const std::string &exp);
   
   // q6
   std::vector<int> Flatten3DVector(const std::vector< std::vector< std::vector<int> > > &input);
