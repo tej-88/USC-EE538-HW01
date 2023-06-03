@@ -21,6 +21,24 @@ float CPPLib::FindMedian(const std::vector<int> &input) {
     return result;
 }
 
+//q4
+std::string CPPLib::RandomCase(const std::string &input) {
+    std::string result;
+
+    srand(time(0)); 
+    for (const auto &x : input) {
+        int parity = rand();
+        if ((parity % 2) == 0) {
+            result.push_back(toupper(x));
+        }
+        else {
+            result.push_back(tolower(x));
+        }
+    }
+
+    return result;
+}
+
 // Question 5 Print your self-introduction
 std::string CPPLib::PrintIntro(const std::string &first, const std::string &last, const std::string &exp) {
     // Please fill up this function.
