@@ -21,3 +21,11 @@ TEST(climbStairs, OneInput) {
   int expected = 1;
   EXPECT_EQ(expected, actual);
 }
+
+TEST(climbStairs, TwoInput) {
+  CPPLib s;
+  int input = 2;
+  int actual = s.climbStairs(input);
+  int expected = 2;
+  EXPECT_EQ(expected, actual);
+}
