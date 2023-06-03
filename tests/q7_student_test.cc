@@ -6,6 +6,10 @@
 #include "gtest/gtest.h"
 
 // Add your own tests in this file
-TEST(Q7_Student, ReturnIntro) {
-  EXPECT_EQ(true, true);
+TEST(climbStairs, ZeroInput) {
+  CPPLib s;
+  int input = 0;
+  int actual = s.climbStairs(input);
+  int expected = 0;
+  EXPECT_EQ(expected, actual);
 }
