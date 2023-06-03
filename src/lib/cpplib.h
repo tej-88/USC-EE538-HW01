@@ -15,6 +15,9 @@ class CPPLib {
   // NOTE: write your own function declaration q2 here
   float FindMedian(const std::vector<int> &input);
 
+  //q4
+  std::string RandomCase(const std::string &input);
+  
   // Print your self-introduction
   std::string PrintIntro(const std::string &first, const std::string &last, const std::string &exp);
   
