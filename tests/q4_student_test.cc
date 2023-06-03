@@ -13,3 +13,11 @@ TEST(RandomCase, EmptyInput) {
   std::string expected;
   EXPECT_EQ(expected, actual);
 }
+
+TEST(RandomCase, SingleInput) {
+  CPPLib s;
+  std::string input = "a";
+  std::string actual = s.RandomCase(input);
+  bool condition = (actual == "a") || (actual == "A");
+  EXPECT_TRUE(condition);
+}
