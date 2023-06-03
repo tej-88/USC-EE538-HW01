@@ -45,6 +45,14 @@ std::vector<int> CPPLib::Flatten3DVector(const std::vector< std::vector< std::ve
 
 // Question 7 Climbing Stairs
 int CPPLib::climbStairs(int n){
-    // Please fill up this function.
-    return 0;
+     // Please fill up this function.
+    if ((n < 0) || (n > 45)) {
+        return -1;
+    }
+    else if (n <= 2) {
+        return n;
+    }
+    else {
+        return (climbStairs(n - 1) + climbStairs(n - 2));
+    }
 }
