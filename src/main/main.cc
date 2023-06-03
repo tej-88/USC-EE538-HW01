@@ -3,8 +3,7 @@
 
 int main() {
   // Print Hello world!
-  CPPLib s;
-  std::cout << s.PrintIntro() << std::endl;
+  std::cout << "Hello world!" << std::endl;
   
   return 0;
 }
