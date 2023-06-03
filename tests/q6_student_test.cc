@@ -45,3 +45,11 @@ TEST(Flatten3DVector, SingleMatrix) {
   std::vector<int> expected = {1, 2, 3, 3, 5, 6, 4, 1};
   EXPECT_EQ(expected, actual);
 }
+
+TEST(Flatten3DVector, MultiMatrix) {
+  CPPLib s;
+  std::vector< std::vector< std::vector<int> > > input = {{{1, 2, 3},{3, 5, 6},{4, 1}}, {{3, 2}, {5, 4}, {8, 1, 4, 2}}};
+  std::vector<int> actual = s.Flatten3DVector(input);
+  std::vector<int> expected = {1, 2, 3, 3, 5, 6, 4, 1, 3, 2, 5, 4, 8, 1, 4, 2};
+  EXPECT_EQ(expected, actual);
+}
