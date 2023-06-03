@@ -6,6 +6,10 @@
 #include "gtest/gtest.h"
 
 // Add your own tests in this file
-TEST(Q6_Student, ReturnIntro) {
-  EXPECT_EQ(true, true);
+TEST(Flatten3DVector, EmptyInput) {
+  CPPLib s;
+  std::vector< std::vector< std::vector<int> > > input;
+  std::vector<int> actual = s.Flatten3DVector(input);
+  std::vector<int> expected;
+  EXPECT_EQ(expected, actual);
 }
