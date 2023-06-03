@@ -13,3 +13,11 @@ TEST(climbStairs, ZeroInput) {
   int expected = 0;
   EXPECT_EQ(expected, actual);
 }
+
+TEST(climbStairs, OneInput) {
+  CPPLib s;
+  int input = 1;
+  int actual = s.climbStairs(input);
+  int expected = 1;
+  EXPECT_EQ(expected, actual);
+}
