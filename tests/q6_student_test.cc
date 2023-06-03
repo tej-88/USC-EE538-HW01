@@ -29,3 +29,11 @@ TEST(Flatten3DVector, SingleRow) {
   std::vector<int> expected = {1, 3, 4};
   EXPECT_EQ(expected, actual);
 }
+
+TEST(Flatten3DVector, SingleCol) {
+  CPPLib s;
+  std::vector< std::vector< std::vector<int> > > input = {{{1},{3},{4}}};
+  std::vector<int> actual = s.Flatten3DVector(input);
+  std::vector<int> expected = {1, 3, 4};
+  EXPECT_EQ(expected, actual);
+}
