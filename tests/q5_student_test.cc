@@ -35,3 +35,13 @@ TEST(PrintIntro, EmptyLast) {
   std::string expected = "Hi, my name is John , and my programming experiences are: Novice.";
   EXPECT_EQ(true, true);
 }
+
+TEST(PrintIntro, EmptyExp) {
+  CPPLib s;
+  std::string first = "John";
+  std::string last = "Adams";
+  std::string exp;
+  std::string actual = s.PrintIntro(first, last, exp);
+  std::string expected = "Hi, my name is John Adams, and my programming experiences are: .";
+  EXPECT_EQ(true, true);
+}
