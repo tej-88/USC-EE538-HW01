@@ -151,4 +151,4 @@ bazel test tests:q7_student_test
 **Hint**: Try to write a recursive relationship.
 What is the complexity of your implementation?
 
-Answer:
+Answer: O(n ^ 2)
