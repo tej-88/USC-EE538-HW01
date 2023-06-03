@@ -13,3 +13,11 @@ TEST(Flatten3DVector, EmptyInput) {
   std::vector<int> expected;
   EXPECT_EQ(expected, actual);
 }
+
+TEST(Flatten3DVector, SingleElement) {
+  CPPLib s;
+  std::vector< std::vector< std::vector<int> > > input = {{{1}}};
+  std::vector<int> actual = s.Flatten3DVector(input);
+  std::vector<int> expected = {1};
+  EXPECT_EQ(expected, actual);
+}
