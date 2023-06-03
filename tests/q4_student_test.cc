@@ -45,3 +45,11 @@ TEST(RandomCase, DoubleInputNonLetter) {
   bool condition = (actual == "a3") || (actual == "A3");
   EXPECT_TRUE(condition);
 }
+
+TEST(RandomCase, DoubleInput) {
+  CPPLib s;
+  std::string input = "aB";
+  std::string actual = s.RandomCase(input);
+  bool condition = (actual == "ab") || (actual == "AB") || (actual == "aB") || (actual == "Ab");
+  EXPECT_TRUE(condition);
+}
