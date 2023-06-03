@@ -14,3 +14,11 @@ TEST(FindMedian, EmptyInput) {
   float expected = -1;
   EXPECT_EQ(expected, actual);
 }
+
+TEST(FindMedian, SingleInput) {
+  CPPLib s;
+  std::vector<int> input = {3};
+  float actual = s.FindMedian(input);
+  float expected = 3;
+  EXPECT_EQ(expected, actual);
+}
