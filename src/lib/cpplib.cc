@@ -4,7 +4,7 @@
 std::string CPPLib::PrintHelloWorld() { return "**** Hello World ****"; }
 
 // NOTE: write your own function declaration q2 here
-float FindMedian(const std::vector<int> &input) {
+float CPPLib::FindMedian(const std::vector<int> &input) {
     int size = input.size();
     float result;
 

@@ -7,6 +7,10 @@
 #include "gtest/gtest.h"
 
 // Add your own tests in this file
-TEST(Q2_Student, ReturnIntro) {
-  EXPECT_EQ(true, true);
+TEST(FindMedian, EmptyInput) {
+  CPPLib s;
+  std::vector<int> input;
+  float actual = s.FindMedian(input);
+  float expected = -1;
+  EXPECT_EQ(expected, actual);
 }
