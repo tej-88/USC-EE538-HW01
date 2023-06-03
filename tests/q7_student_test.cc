@@ -45,3 +45,11 @@ TEST(climbStairs, NegativeInput) {
   int expected = -1;
   EXPECT_EQ(expected, actual);
 }
+
+TEST(climbStairs, AboveFortyFiveInput) {
+  CPPLib s;
+  int input = 46;
+  int actual = s.climbStairs(input);
+  int expected = -1;
+  EXPECT_EQ(expected, actual);
+}
