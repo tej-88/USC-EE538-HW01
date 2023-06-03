@@ -125,7 +125,7 @@ bazel test tests:q6_student_test
 ```
 What is the worst case runtime complexity of your implementation?
 
-Answer:
+Answer: O(n^3)
 
 ## Question 7 (30 Points. Medium)
 
