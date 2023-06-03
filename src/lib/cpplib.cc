@@ -22,9 +22,10 @@ float CPPLib::FindMedian(const std::vector<int> &input) {
 }
 
 // Question 5 Print your self-introduction
-std::string CPPLib::PrintIntro() {
+std::string CPPLib::PrintIntro(const std::string &first, const std::string &last, const std::string &exp) {
     // Please fill up this function.
-    return ""; 
+    std::string output = "Hi, my name is " + first + " " + last + ", and my programming experiences are: " + exp + ".";
+    return output; 
 }
 
 // Question 6
