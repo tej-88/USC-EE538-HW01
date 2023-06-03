@@ -39,7 +39,7 @@ void Example1(int n) {
 }
 ```
 
-Answer:
+Answer: O(log(n))
 
 ```cpp
 void Example2(int n) {
@@ -54,7 +54,7 @@ void Example2(int n) {
 }
 ```
 
-Answer:
+Answer: O(n * log(n) * log(n))
 
 ```cpp
 void Example3(int n) {
@@ -67,7 +67,7 @@ void Example3(int n) {
 
 Hint: Note the ```j < i*i*i``` in the inner loop and compute the cube sequence to get the final result.
 
-Answer:
+Answer: O(n ^ 4)
 
 ```cpp
 int Example4(int n) {
@@ -85,7 +85,7 @@ int Example4(int n) {
 
 Hint: Note the ```i /= 3``` in the outer loop and compute the geometric sequence to get the final result.
 
-Answer:
+Answer: O(n* log(n))
 
 ## Question 4 (10 Points. Easy)
 
