@@ -21,3 +21,11 @@ TEST(RandomCase, SingleInput) {
   bool condition = (actual == "a") || (actual == "A");
   EXPECT_TRUE(condition);
 }
+
+TEST(RandomCase, SingleNonLetter) {
+  CPPLib s;
+  std::string input = "2";
+  std::string actual = s.RandomCase(input);
+  bool condition = (actual == "2");
+  EXPECT_TRUE(condition);
+}
