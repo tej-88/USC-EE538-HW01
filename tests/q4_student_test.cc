@@ -37,3 +37,11 @@ TEST(RandomCase, NonLetter) {
   bool condition = (actual == "2.?4");
   EXPECT_TRUE(condition);
 }
+
+TEST(RandomCase, DoubleInputNonLetter) {
+  CPPLib s;
+  std::string input = "a3";
+  std::string actual = s.RandomCase(input);
+  bool condition = (actual == "a3") || (actual == "A3");
+  EXPECT_TRUE(condition);
+}
